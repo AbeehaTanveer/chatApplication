@@ -7,10 +7,10 @@ const app = express();
 const server = http.createServer(app);
 const port = process.env.PORT || 3000;
 
-// Setup Socket.IO with CORS configuration
+const URL_S=""
 const io  = socketIO(server, {
   cors: {
-    origin: "https://chat-application-my7a.vercel.app",
+    origin: `${URL_S}`,
     methods: ["GET", "POST"],
   }
 });
