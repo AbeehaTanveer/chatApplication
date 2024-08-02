@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 // Setup Socket.IO with CORS configuration
 const io  = socketIO(server, {
   cors: {
-    origin: "https://chat-application-4pzk.vercel.app/",
+    origin: "https://chat-application-4pzk.vercel.app",
     methods: ["GET", "POST"],
   }
 });
